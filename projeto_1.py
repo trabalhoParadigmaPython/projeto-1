@@ -48,4 +48,5 @@ tema = driver.find_element(By.XPATH, '//*[@id="temas-lista-topicos"]/li[5]/a/div
 tema.click()
 sleep(5)
 
+
 driver.quit()
