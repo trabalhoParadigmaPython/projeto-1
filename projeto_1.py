@@ -58,13 +58,5 @@ sleep(2)
 download = driver.find_element(By.XPATH, '//*[@id="acessar-conteudo-complementar-arquivo-64615eb275e90c00266b9ff9"]').click()
 sleep(250)
 
-download_path = 'C:\Dev\Projetos\Python\Projeto_1\projeto-1-1'  # Substitua pelo caminho da sua pasta de download
-prefs = {
-    'download.default_directory': download_path,
-    'download.prompt_for_download': False,
-    'download.directory_upgrade': True,
-    'safebrowsing.enabled': True
-}
-options.add_experimental_option('prefs', prefs)
 
 driver.quit()
